@@ -1,67 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nina Kimchi | Linktree</title>
-    <!-- Favicon -->
-    <link rel="icon" href="https://static-cdn.jtvnw.net/jtv_user_pictures/3a0c9b14-e265-42cd-b886-2416c4a0a7a6-profile_image-70x70.png" type="image/x-icon" />
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Core theme CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
-    <!-- Parallax Pixel Background Animation -->
-    <section class="animated-background">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </section>
-    <!-- End of Parallax Pixel Background Animation -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nina Kimchi | Linktree</title>
+  <!-- Favicon -->
+  <link rel="icon"
+    href="https://static-cdn.jtvnw.net/jtv_user_pictures/3a0c9b14-e265-42cd-b886-2416c4a0a7a6-profile_image-70x70.png"
+    type="image/x-icon" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Core theme CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <a id="profilePicture" href="#popup">
-      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/3a0c9b14-e265-42cd-b886-2416c4a0a7a6-profile_image-70x70.png" alt="Profile Picture">
+<body>
+  <!-- Parallax Pixel Background Animation -->
+  <section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section>
+  <!-- End of Parallax Pixel Background Animation -->
+
+  <a id="profilePicture" href="#popup">
+    <img
+      src="https://static-cdn.jtvnw.net/jtv_user_pictures/3a0c9b14-e265-42cd-b886-2416c4a0a7a6-profile_image-70x70.png"
+      alt="Profile Picture">
+  </a>
+
+  <div class="overlay" id="popup">
+    <div class="popup">
+      <div class="popup-photo">
+        <a href="https://static-cdn.jtvnw.net/jtv_user_pictures/3a0c9b14-e265-42cd-b886-2416c4a0a7a6-profile_image-70x70.png"
+          target="_blank">
+          <img
+            src="https://static-cdn.jtvnw.net/jtv_user_pictures/3a0c9b14-e265-42cd-b886-2416c4a0a7a6-profile_image-70x70.png"
+            alt="Profile Picture">
+        </a>
+      </div>
+      <div class="popup-quote">
+
+      </div>
+      <a class="popup-close" onclick="history.back()">&times;</a>
+    </div>
+  </div>
+
+  <div id="userName">
+    @ninakimchi
+  </div>
+
+  <div id="links">
+    <a class="link" href="https://www.youtube.com/channel/UC_UhbZHINXCby9o3OTjbu7g" target="_blank">
+      <i class="fab fa-youtube">&nbsp;</i>YouTube
+    </a>
+    <a class="link" href="https://www.instagram.com/ninakimchii/" target="_blank">
+      <i class="fab fa-instagram">&nbsp;</i>Instagram
+    </a>
+    <a class="link" href="https://twitter.com/ninakimchii" target="_blank">
+      <i class="fab fa-twitter">&nbsp;</i>Twitter
+    </a>
+    <a class="link" href="https://www.twitch.tv/ninakimchi" target="_blank">
+      <i class="fab fa-twitch">&nbsp;</i>Twitch
     </a>
 
-    <div class="overlay" id="popup">
-      <div class="popup">
-        <div class="popup-photo">
-          <a href="https://static-cdn.jtvnw.net/jtv_user_pictures/3a0c9b14-e265-42cd-b886-2416c4a0a7a6-profile_image-70x70.png" target="_blank">
-            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/3a0c9b14-e265-42cd-b886-2416c4a0a7a6-profile_image-70x70.png" alt="Profile Picture">
-          </a>
-        </div>
-        <div class="popup-quote">
-       
-        </div>
-        <a class="popup-close" onclick="history.back()">&times;</a>
-      </div>
-    </div>
+  </div>
+  <br/><br/>
+  <div id="userName">
+    LINKs DOS PRODUTOS QUE COMPREI ❤
+  </div>
 
-    <div id="userName">
-      @ninakimchi
-    </div>
+  <div id="links-produto">
 
-    <div id="links">
-      <a class="link" href="https://www.youtube.com/channel/UC_UhbZHINXCby9o3OTjbu7g" target="_blank">
-        <i class="fab fa-youtube">&nbsp;</i>YouTube
-      </a>
-      <a class="link" href="https://www.instagram.com/ninakimchii/" target="_blank">
-        <i class="fab fa-instagram">&nbsp;</i>Instagram
-      </a>
-      <a class="link" href="https://twitter.com/ninakimchii" target="_blank">
-        <i class="fab fa-twitter">&nbsp;</i>Twitter
-      </a>
-      <a class="link" href="https://www.twitch.tv/ninakimchi" target="_blank">
-        <i class="fab fa-twitch">&nbsp;</i>Twitch
-      </a>
-      
-    </div>
 
-    <div id="hashtag">
-      # Me siga para mais novidades ❤
-    </div>
-  </body>
+  </div>
+
+
+
+  <div id="hashtag">
+    
+    # Me siga para mais novidades ❤
+  </div>
+
+  <script>
+    const lista = document.getElementById("links-produto");
+    let html = '<br>';
+    let links = [
+      {
+        link: "https://s.click.aliexpress.com/e/_DCHsmq1",
+        titulo: "Pelucia Jigglypuff"
+      },
+      {
+        link: "https://s.click.aliexpress.com/e/_DnFuL3X",
+        titulo: "Action Figure ailor Moon"
+      }
+
+    ];
+
+    links.forEach(item => {
+      html += '<a class="link" href="' + item.link + '" target="_blank">';
+      html += '<i class="fas fa-store">&nbsp;</i>' + item.titulo;
+      html += '</a>';
+
+    });
+
+    //sssss document.querySelector('links').innerHTML = html;
+    lista.innerHTML += html;
+  </script>
+</body>
+
 </html>
